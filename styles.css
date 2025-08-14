@@ -227,8 +227,9 @@ body {
 
 .profile-image:hover img {
     transform: scale(1.05);
-}/* 
-Section Styles */
+}
+
+/* Section Styles */
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -612,8 +613,9 @@ Section Styles */
 
 .footer p {
     opacity: 0.8;
-}/
-* Responsive Design */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -742,13 +744,14 @@ Section Styles */
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.hero-content > * {
+.hero-content>* {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
