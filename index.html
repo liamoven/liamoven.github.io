@@ -1,262 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liam Oven - Cloud Platform Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liam Oven - Cloud Platform Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;line-height:1.6;color:#333;background:#fff}.container{max-width:1200px;margin:0 auto;padding:0 20px}.navbar{position:fixed;top:0;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.1);z-index:1000}.nav-container{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;height:70px}.nav-menu{display:flex;list-style:none;gap:2rem}.nav-link{text-decoration:none;color:#333;font-weight:500;transition:color .3s ease;position:relative}.nav-link:hover{color:#2563eb}.nav-link::after{content:'';position:absolute;width:0;height:2px;bottom:-5px;left:0;background:#2563eb;transition:width .3s ease}.nav-link:hover::after{width:100%}.hamburger{display:none;flex-direction:column;cursor:pointer}.hamburger span{width:25px;height:3px;background:#333;margin:3px 0;transition:.3s}.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;position:relative;overflow:hidden}.hero-container{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}.hero-title{font-size:3.5rem;font-weight:700;margin-bottom:1rem;line-height:1.2}.highlight{background:linear-gradient(45deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-subtitle{font-size:1.5rem;font-weight:400;margin-bottom:1.5rem;opacity:.9}.hero-description{font-size:1.1rem;margin-bottom:2.5rem;opacity:.8;line-height:1.7}.hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}.btn{padding:12px 30px;border-radius:50px;text-decoration:none;font-weight:600;transition:all .3s ease;display:inline-block;text-align:center}.btn-primary{background:#fbbf24;color:#1f2937}.btn-primary:hover{background:#f59e0b;transform:translateY(-2px);box-shadow:0 10px 25px rgba(251,191,36,.3)}.btn-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}.btn-secondary:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5);transform:translateY(-2px)}.profile-card{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border-radius:20px;padding:2rem;text-align:center;border:1px solid rgba(255,255,255,.2)}.profile-image{width:200px;height:200px;margin:0 auto;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,.3);box-shadow:0 8px 32px rgba(0,0,0,.2)}.profile-image img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .3s ease}.profile-image:hover img{transform:scale(1.05)}@media(max-width:768px){.nav-menu{position:fixed;left:-100%;top:70px;flex-direction:column;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);width:100%;text-align:center;transition:.3s;box-shadow:0 10px 27px rgba(0,0,0,.05);padding:2rem 0}.nav-menu.active{left:0}.hamburger{display:flex}.hamburger.active span:nth-child(2){opacity:0}.hamburger.active span:nth-child(1){transform:translateY(8px) rotate(45deg)}.hamburger.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.hero-container{grid-template-columns:1fr;text-align:center;gap:2rem}.hero-title{font-size:2.5rem}.hero-subtitle{font-size:1.2rem}.hero-buttons{justify-content:center}.profile-image{width:150px;height:150px}}@media(max-width:480px){.container{padding:0 15px}.hero-title{font-size:2rem}.hero-subtitle{font-size:1rem}.hero-description{font-size:1rem}.btn{padding:10px 20px;font-size:.9rem}}</style>
+<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Liam Oven</span>
-                </h1>
-                <h2 class="hero-subtitle">Cloud Platform Engineer</h2>
-                <p class="hero-description">
-                    Specializing in Azure cloud solutions, infrastructure automation, and scalable platform engineering.
-                    Passionate about building robust, secure, and efficient cloud architectures.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="140825.jpg" alt="Liam Oven - Cloud Platform Engineer" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate Cloud Platform Engineer currently working in cloud infrastructure and
-                        platform engineering.
-                        My career journey began at Tesco (December 2015 - June 2017), followed by many years as a
-                        Remote Fix Technician
-                        (June 2017 - February 2025), where I developed strong problem-solving and technical
-                        skills.
-                    </p>
-                    <p>
-                        Since February 2025, I've transitioned into Cloud Platform Engineering, specializing in
-                        Microsoft Azure.
-                        I'm Microsoft Certified in Azure Fundamentals and passionate about building robust, secure,
-                        and efficient
-                        cloud architectures. I enjoy solving complex challenges and helping organizations
-                        leverage the
-                        full potential of cloud technologies.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">9+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">2025</span>
-                            <span class="stat-label">Started Cloud Engineering</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">1</span>
-                            <span class="stat-label">Azure Certification</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fab fa-microsoft"></i> Azure Services</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Azure DevOps</span>
-                        <span class="skill-tag">Azure Storage</span>
-                        <span class="skill-tag">Azure Entra ID</span>
-                        <span class="skill-tag">Azure App Registrations</span>
-                        <span class="skill-tag">Azure Virtual Machines</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">PowerShell</span>
-                        <span class="skill-tag">.NET Core</span>
-                        <span class="skill-tag">.NET 9</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">YAML</span>
-                        <span class="skill-tag">JSON</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Platform & DevOps</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Azure DevOps</span>
-                        <span class="skill-tag">SharePoint</span>
-                        <span class="skill-tag">Exchange Hybrid</span>
-                        <span class="skill-tag">Exchange Online</span>
-                        <span class="skill-tag">Exchange On-Premises</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Security & Compliance</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">DCB1596 Compliance</span>
-                        <span class="skill-tag">Privileged Identity Management</span>
-                        <span class="skill-tag">Azure Entra ID</span>
-                        <span class="skill-tag">Secure Email Systems</span>
-                        <span class="skill-tag">NHS Standards</span>
-                        <span class="skill-tag">Identity Management</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="cert-header">
-                        <i class="fab fa-microsoft"></i>
-                        <h3>Microsoft Certified: Azure Fundamentals</h3>
-                    </div>
-                    <div class="cert-details">
-                        <div class="cert-info">
-                            <span class="cert-label">Certification Number:</span>
-                            <span class="cert-value">AF4FA1-6D1B0E</span>
-                        </div>
-                        <div class="cert-info">
-                            <span class="cert-label">Earned on:</span>
-                            <span class="cert-value">May 18, 2024</span>
-                        </div>
-                        <div class="cert-info">
-                            <span class="cert-label">Status:</span>
-                            <span class="cert-value cert-active">Active (No Expiration)</span>
-                        </div>
-                    </div>
-                    <div class="cert-links">
-                        <a href="https://learn.microsoft.com/en-us/users/liamo-2490/transcript/dee44c26ykm9188"
-                            class="cert-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Transcript
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>NHS DCB1596 Secure Email Compliance</h3>
-                    </div>
-                    <p>Contributed to the implementation of DCB1596 secure email standard for NHS trust as part of a
-                        team effort, ensuring systems meet requirements for secure transmission of personal
-                        confidential data and sensitive information to other secure email domains.</p>
-                    <div class="project-tech">
-                        <span>DCB1596 Standard</span>
-                        <span>Azure AD PIM</span>
-                        <span>Secure Email Systems</span>
-                        <span>NHS Compliance</span>
-                        <span>PowerShell</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb1596-secure-email"
-                            class="project-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> DCB1596 Standard
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>I'm always interested in discussing new opportunities, cloud architecture challenges, coding,
-                        or just
-                        connecting with fellow engineers.</p>
-                    <div class="contact-methods">
-                        <a href="mailto:liamoven.sgwa4@passmail.com" class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>liamoven.sgwa4@passmail.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/liam-oven-10384b199/" class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
-                        </a>
-                        <a href="https://github.com/liamoven" class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Profile</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Liam Oven. Cloud Platform Engineer.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<nav class="navbar">
+<div class="nav-container">
+<ul class="nav-menu">
+<li><a href="#home" class="nav-link">Home</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#skills" class="nav-link">Skills</a></li>
+<li><a href="#certifications" class="nav-link">Certifications</a></li>
+<li><a href="#projects" class="nav-link">Projects</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+<section id="home" class="hero">
+<div class="hero-container">
+<div class="hero-content">
+<h1 class="hero-title">Hi, I'm <span class="highlight">Liam Oven</span></h1>
+<h2 class="hero-subtitle">Cloud Platform Engineer</h2>
+<p class="hero-description">Specializing in Azure cloud solutions, infrastructure automation, and scalable platform engineering. Passionate about building robust, secure, and efficient cloud architectures.</p>
+<div class="hero-buttons">
+<a href="#projects" class="btn btn-primary">View My Work</a>
+<a href="#contact" class="btn btn-secondary">Get In Touch</a>
+</div>
+</div>
+<div class="hero-image">
+<div class="profile-card">
+<div class="profile-image">
+<img src="140825.jpg" alt="Liam Oven - Cloud Platform Engineer">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<div class="about-content">
+<div class="about-text">
+<p>I'm a passionate Cloud Platform Engineer currently working in cloud infrastructure and platform engineering. My career journey began at Tesco (December 2015 - June 2017), followed by many years as a Remote Fix Technician (June 2017 - February 2025), where I developed strong problem-solving and technical skills.</p>
+<p>Since February 2025, I've transitioned into Cloud Platform Engineering, specializing in Microsoft Azure. I'm Microsoft Certified in Azure Fundamentals and passionate about building robust, secure, and efficient cloud architectures. I enjoy solving complex challenges and helping organizations leverage the full potential of cloud technologies.</p>
+<div class="about-stats">
+<div class="stat">
+<span class="stat-number">9+</span>
+<span class="stat-label">Years Experience</span>
+</div>
+<div class="stat">
+<span class="stat-number">2025</span>
+<span class="stat-label">Started Cloud Engineering</span>
+</div>
+<div class="stat">
+<span class="stat-number">1</span>
+<span class="stat-label">Azure Certification</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="skills">
+<div class="container">
+<h2 class="section-title">Technical Skills</h2>
+<div class="skills-grid">
+<div class="skill-category">
+<h3><i class="fab fa-microsoft"></i> Azure Services</h3>
+<div class="skill-items">
+<span class="skill-tag">Azure DevOps</span>
+<span class="skill-tag">Azure Storage</span>
+<span class="skill-tag">Azure Entra ID</span>
+<span class="skill-tag">Azure App Registrations</span>
+<span class="skill-tag">Azure Virtual Machines</span>
+</div>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-code"></i> Programming & Development</h3>
+<div class="skill-items">
+<span class="skill-tag">PowerShell</span>
+<span class="skill-tag">.NET Core</span>
+<span class="skill-tag">.NET 9</span>
+<span class="skill-tag">C#</span>
+<span class="skill-tag">Git</span>
+<span class="skill-tag">YAML</span>
+<span class="skill-tag">JSON</span>
+</div>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-tools"></i> Platform & DevOps</h3>
+<div class="skill-items">
+<span class="skill-tag">Azure DevOps</span>
+<span class="skill-tag">SharePoint</span>
+<span class="skill-tag">Exchange Hybrid</span>
+<span class="skill-tag">Exchange Online</span>
+<span class="skill-tag">Exchange On-Premises</span>
+<span class="skill-tag">CI/CD Pipelines</span>
+</div>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-shield-alt"></i> Security & Compliance</h3>
+<div class="skill-items">
+<span class="skill-tag">DCB1596 Compliance</span>
+<span class="skill-tag">Privileged Identity Management</span>
+<span class="skill-tag">Azure Entra ID</span>
+<span class="skill-tag">Secure Email Systems</span>
+<span class="skill-tag">NHS Standards</span>
+<span class="skill-tag">Identity Management</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="certifications" class="certifications">
+<div class="container">
+<h2 class="section-title">Certifications</h2>
+<div class="certifications-grid">
+<div class="certification-card">
+<div class="cert-header">
+<i class="fab fa-microsoft"></i>
+<h3>Microsoft Certified: Azure Fundamentals</h3>
+</div>
+<div class="cert-details">
+<div class="cert-info">
+<span class="cert-label">Certification Number:</span>
+<span class="cert-value">AF4FA1-6D1B0E</span>
+</div>
+<div class="cert-info">
+<span class="cert-label">Earned on:</span>
+<span class="cert-value">May 18, 2024</span>
+</div>
+<div class="cert-info">
+<span class="cert-label">Status:</span>
+<span class="cert-value cert-active">Active (No Expiration)</span>
+</div>
+</div>
+<div class="cert-links">
+<a href="https://learn.microsoft.com/en-us/users/liamo-2490/transcript/dee44c26ykm9188" class="cert-link" target="_blank">
+<i class="fas fa-external-link-alt"></i> View Transcript
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="projects">
+<div class="container">
+<h2 class="section-title">Featured Projects</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header">
+<i class="fas fa-shield-alt"></i>
+<h3>NHS DCB1596 Secure Email Compliance</h3>
+</div>
+<p>Contributed to the implementation of DCB1596 secure email standard for NHS trust as part of a team effort, ensuring systems meet requirements for secure transmission of personal confidential data and sensitive information to other secure email domains.</p>
+<div class="project-tech">
+<span>DCB1596 Standard</span>
+<span>Azure AD PIM</span>
+<span>Secure Email Systems</span>
+<span>NHS Compliance</span>
+<span>PowerShell</span>
+</div>
+<div class="project-links">
+<a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb1596-secure-email" class="project-link" target="_blank">
+<i class="fas fa-external-link-alt"></i> DCB1596 Standard
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="contact">
+<div class="container">
+<h2 class="section-title">Get In Touch</h2>
+<div class="contact-content">
+<div class="contact-info">
+<p>I'm always interested in discussing new opportunities, cloud architecture challenges, coding, or just connecting with fellow engineers.</p>
+<div class="contact-methods">
+<a href="mailto:liamoven.sgwa4@passmail.com" class="contact-method">
+<i class="fas fa-envelope"></i>
+<span>liamoven.sgwa4@passmail.com</span>
+</a>
+<a href="https://www.linkedin.com/in/liam-oven-10384b199/" class="contact-method">
+<i class="fab fa-linkedin"></i>
+<span>LinkedIn Profile</span>
+</a>
+<a href="https://github.com/liamoven" class="contact-method">
+<i class="fab fa-github"></i>
+<span>GitHub Profile</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<p>&copy; 2025 Liam Oven. Cloud Platform Engineer.</p>
+</div>
+</footer>
+<script>const hamburger=document.querySelector('.hamburger');const navMenu=document.querySelector('.nav-menu');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navMenu.classList.toggle('active')});document.querySelectorAll('.nav-link').forEach(n=>n.addEventListener('click',()=>{hamburger.classList.remove('active');navMenu.classList.remove('active')}));document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){target.scrollIntoView({behavior:'smooth',block:'start'})}})});window.addEventListener('scroll',()=>{const navbar=document.querySelector('.navbar');if(window.scrollY>50){navbar.style.background='rgba(255, 255, 255, 0.98)';navbar.style.boxShadow='0 2px 20px rgba(0, 0, 0, 0.1)'}else{navbar.style.background='rgba(255, 255, 255, 0.95)';navbar.style.boxShadow='none'}});</script>
 </body>
-
 </html>
